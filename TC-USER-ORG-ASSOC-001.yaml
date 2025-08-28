@@ -8,7 +8,7 @@
     
   vars:
     org_name: "ENG-ORG-{{ rh_username }}"
-    org_role: "Organization Auditor"     # or Organization Admin / Organization Viewer
+    org_role: "Organization Audit"     # or Organization Admin / Organization Viewer
     org_description: "Engineering org for {{ rh_username }}"
     plat_username: "USER-02-{{ rh_username }}"
     plat_password: "Str0ngP@ss!23"
