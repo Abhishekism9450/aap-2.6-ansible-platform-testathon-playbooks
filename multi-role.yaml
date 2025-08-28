@@ -1,0 +1,15 @@
+---
+- name: TC-USER-MULT-ROLE-ASSIGN-001
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: Assign Team Member role to 003_User_1 for 003_TeamA and 003_TeamB
+      ansible.platform.role_user_assignment:
+        role_definition: Team Member
+        object_ids: ['003_TeamA', '003_TeamB']
+        user: 003_User_1
+        state: present
+        aap_hostname: "{{ aap_hostname }}"
+        aap_username: "{{ aap_username }}"
+        aap_password: "{{ aap_password }}"
+        aap_validate_certs: false
